@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+    <script>
+        for (let i = 1; i < 11; i++) {
+            console.log (i);
+        }
+    </script>
+    <script>
+        let stud13 = {
+            age: 21,
+            name: 'Slavik',
+            surname: 'Vorontsov',
+            sex: 'male',
+        };
+        for (let studInfo in stud13) {
+            console.log ( studInfo, stud13[studInfo] );
+        }
+    </script>
+    <script>
+        let movieList = [
+            {name: 'Indiana Jones', category: 'Приключения'},
+            {name: 'Lara Croft', category: 'Приключения'},
+            {name: 'Kode Da Vinchi', category: 'Экранизация'},
+            {name: 'Inferno', category: 'Экранизация'},
+        ]
+        for (let movieDay of movieList) {
+            console.log ( movieDay.name, movieDay.category );
+        } 
+    </script>
+    <script>
+        let x = 3.856;
+        console.log ( Math.round(x) );
+    </script>
+
+    <script>
+        let arr = [];
+        let incorrectarr = [];
+        let l = arr.length;
+        function getRandomInt(min, max) {
+                    return ( Math.floor(Math.random()*21));
+                }
+        for (l = 0; l < 10;) {
+                arrItem = getRandomInt();
+                if (arrItem >= 5 && arrItem <= 20 ){
+                arr.push (arrItem);
+                l++
+                }
+                else (incorrectarr.push(arrItem))
+            }
+            console.log (arr);
+            console.log (incorrectarr);
+    </script>
+</body>
+</html> 
